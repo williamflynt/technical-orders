@@ -14,7 +14,7 @@ that are familiar (ex: bullet points).
 
 Ideally, this resulting application would provide a GUI to guide the writer through finding the files to process.
 
-## Technical Order Checklists
+### Technical Order Checklists
 
 Examples of technical order (*TO* or *T.O.*) checklists can be found online, and one such example is the [Hellenic F-16 checklist](./HAF-F16-FlightChecklist.pdf) in this directory.
 They are typically highly structured, abbreviated versions of full manuals for flight or other disciplines.
