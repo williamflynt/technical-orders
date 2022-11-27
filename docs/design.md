@@ -234,6 +234,29 @@ even if it means creating an external and tightly coupled validation layer.
 Finally, the rendering engine will support automatic layout.
 Input from writers must not be required to enable clean page breaks and sensible checklist-oriented flow.
 
+### Tracking Revisions
+
+Real, professional TOs track revisions very carefully.
+With each new release, it's common to see black bars in the margin for all changed items.
+Each page has a revision number and date of publishing, and a detailed table of contents outlines page versions at the front of the publication.
+
+This level of control isn't in scope of the project, but there is probably a clean way to do something very similar with `git` history.
+If desired, and if I write the code to do it, the technical T.O. writer might be able to control a `main` branch to enable this kind of output.
+
+It's also possible to allow some kind of dated release notes tag.
+For example, this tag uses a custom `&!` to denote one or many changes on specific dates:
+
+```
+#### Fartabulizer Plastofluid Reblinking
+
+* Case - Open.
+* Trumble bearings - Check for krackle flecks and other debris. :1: &!2048-10-05 &!2049-02-31
+* ...
+```
+
+The implementation space is wide - support for versioning, dates, and other data is all possible.
+Any custom tag format could be adopted to contain the history and required information.
+
 ### Application Structure
 
 A shape is emerging from our discussion so far, with three levels of conceptual space.
