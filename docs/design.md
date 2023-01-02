@@ -31,6 +31,12 @@ T.O. checklist sizes are varied, but a large range of sizes near 15x22 cm can be
 They are meant to be bound on the long edge, typically with a few flexible rings.
 Pages have alternating margins based on page side, with the inner/center margin wider than the outer margin, to support holes for binding without losing content.
 
+## T.O. Style Checklist - AST
+
+If a technical order checklist is represented as an AST, what does that look like?
+
+TODO (wf 2 Jan 23): Render checklist tree with respect to Markdown considerations below.
+
 ## Technical Considerations
 
 ### Requirements
@@ -94,8 +100,8 @@ This table will explain non-standard uses of existing syntax and custom syntax r
 | `#####`  | Subchecklist (ex: `After landing:` - A-14.1)         |
 | `######` | Information Page (ex: A-14 in example pub)           |
 | `>`      | Information heading (when under `######`)            |
-| `:1:`    | Note 1 (follow with text on Information Page)        |
-| `* :3:`  | Note 3 on Information page (text to follow)          |
+| `:1n:`   | Note 1 (follow with text on Information Page)        |
+| `:3n:`   | Note 3 on Information page (text to follow)          |
 | `:2c:`   | Caution 2                                            |
 | `:4w:`   | Warning 4                                            |
 | `:5s:`   | Nothing - this renders without special consideration |
@@ -120,7 +126,7 @@ An example checklist:
 
 #### Out of Coffee
 
-* Maintain aircraft control. :1:
+* Maintain aircraft control. :1n:
 * Autopilot - Set. :2w:
 
 :col: If energy drink is available:
@@ -145,7 +151,7 @@ An example checklist:
 
 > Other Considerations:
 
-* :1: If depleted coffee stores are detected while in the terminal approach phase, continue the approach to land.
+* :1n: If depleted coffee stores are detected while in the terminal approach phase, continue the approach to land.
 * :2w: Do not set autopilot while in a critical phase of flight.
 * Some energy drinks may not be approved for coffee substitution. Do not consume disapproved energy drinks.
 * :3c: Brakes should be applied in a single, moderate, and steady application without cycling the antiskid.
@@ -250,7 +256,7 @@ For example, this tag uses a custom `&!` to denote one or many changes on specif
 #### Fartabulizer Plastofluid Reblinking
 
 * Case - Open.
-* Trumble bearings - Check for krackle flecks and other debris. :1: &!2048-10-05 &!2049-02-31
+* Trumble bearings - Check for krackle flecks and other debris. :1n: &!2048-10-05 &!2049-02-31
 * ...
 ```
 
