@@ -31,11 +31,32 @@ T.O. checklist sizes are varied, but a large range of sizes near 15x22 cm can be
 They are meant to be bound on the long edge, typically with a few flexible rings.
 Pages have alternating margins based on page side, with the inner/center margin wider than the outer margin, to support holes for binding without losing content.
 
-## T.O. Style Checklist - AST
+## Tree Representation of T.O. Style Manual & Checklist Publications 
 
-If a technical order checklist is represented as an AST, what does that look like?
+If a technical order checklist is represented as a tree, what does that look like?
 
-TODO (wf 2 Jan 23): Render checklist tree with respect to Markdown considerations below.
+```
+Manual (ex: 3-1.Ballad)
+|- Chapter (ex: Electrical System)
+|  |- Section (ex: DC Bus)
+|- Publication (Checklist)
+|  |- Section
+|     |- Subsection
+|        |- Checklist
+|           |- Item (step, figure, table, ...)
+|           |- Subchecklist
+|              |- Item
+|           |- Information Page
+|              |- Item
+|              |- Section
+|                 |- Item
+```
+
+This design document concerns the Publication (Checklist) category in the tree above, but we can derive insights
+about the broader Manual from the discussion.
+
+For examples of Publication, Section, Subchecklist, and other categories, see [Parsing](#parsing) below, and
+the Hellenic F-16 checklist linked at the top.
 
 ## Technical Considerations
 
